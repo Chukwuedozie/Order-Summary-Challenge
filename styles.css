@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    color:#40514e;
+    background: #cddafd url("images/pattern-background-desktop.svg") no-repeat;
+    background-size: 100% 50%;
+    position: relative;
+    min-height: 100vh;
+
+}
+
+.parent {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    max-width: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.all-text {
+    padding: 8%;
+    text-align: center;
+}
+
+
+.first-p{
+    line-height: 1.5;
+}
+
+.plan {
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: hsl(225,100%, 98%);
+
+}
+
+.amount {
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+.amount div {
+    margin-left: 30px;
+}
+
+.amount div h5 {
+    font-size: 15px;
+}
+
+.amount div p {
+    font-size: 14px;
+}
+
+.plan-change:hover {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+.order-cancel {
+    text-decoration: none;
+    color: gray;
+}
+
+.order-cancel:hover {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero-image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    
+}
+    
+.payment-proceed {
+   background-color: hsl(245,75%, 52%);
+   display: block;
+   color: white;
+   margin: 30px 0;
+   text-decoration: none;
+   padding: 20px 0;
+   border-radius: 12px;
+   box-shadow: 1px 20px 5px hsl(225,100%, 98%);
+}
+
+.payment-proceed:hover {
+    background-color: hsl(224, 23%, 55%) ;
+}
+
+@media screen and (max-width:500px) {
+    body{
+        background: #cddafd url("images/pattern-background-mobile.svg") no-repeat;
+        font-size: 14px;
+    }
+
+    .parent {
+        height: 89%;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+    
+    .payment-proceed,.plan-change:hover {
+        font-size: 13px;
+    }
+
+    .order-cancel {
+        font-size: 13px;
+    }
+
+    .plan {
+        padding: 12px;
+    }
+
+    .all-text {
+        padding: 8% 7%;
+    }
+}
+
